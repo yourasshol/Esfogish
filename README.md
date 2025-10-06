@@ -159,7 +159,7 @@ tacokitty = feline
 
 esfoglo = fruit
 
-charnex = creator
+charnex = charlie
 
 charnuff = master
 
@@ -216,3 +216,5 @@ charnzenzonoesfog = forbidden
 charnzenzovintok = universal
 
 bluff = blue
+
+drigdicg = dani
