@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Esfogish Translator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdf6e3;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #b58900;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #268bd2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔤 Esfogish Translator</h1>
+  <input type="text" id="inputWord" placeholder="Enter Esfogish word">
+  <button onclick="translate()">Translate</button>
+  <div id="output"></div>
+
+  <script>
+    const dictionary = {
+      esfog: "I like pineapple on pizza",
+      noesfog: "I dislike pineapple on pizza",
+      blarnuff: "I greet you",
+      zintoka: "You are my friend",
+      grivnuff: "I want pizza",
+      pluffami: "I feel joy",
+      snorvuff: "I see a cat",
+      dramblen: "I am dancing",
+      flarnova: "It tastes amazing",
+      glimbuff: "That is cool",
+      vintoka: "Let’s go now",
+      squibnuff: "I made a lucky mistake",
+      tacokatta: "The taco cat is real",
+      yuffami: "I agree",
+      narnami: "I disagree",
+      whaznuff: "What is this?",
+      blarnuvaa: "I wish you good night",
+      blarnuzena: "I wish you good morning",
+      snorvokka: "That’s a kitten",
+      flarnokka: "That’s a topping",
+      pluffashi: "You bring joy",
+      squibnashi: "You are a genius by accident",
+      dramblashi: "You dance proudly",
+      grivnashi: "You sliced the pizza",
+      glimbonaa: "You are awesome",
+      snorvisha: "You are feline",
+      bluff: "blush",
+      blarnu: "hello",
+      zintok: "friend",
+      grivna: "pizza",
+      pluffa: "joy",
+      snorvik: "cat",
+      dramble: "dance",
+      flarnish: "flavor",
+      glimbo: "cool",
+      vintok: "party",
+      squibna: "luck",
+      tacocat: "legend",
+      yuff: "yes",
+      narn: "no",
+      whaznit: "what",
+      bluffa: "I blush"
+    };
+
+    function translate() {
+      const word = document.getElementById("inputWord").value.trim().toLowerCase();
+      const meaning = dictionary[word];
+      const output = document.getElementById("output");
+      output.textContent = meaning ? `"${word}" means: ${meaning}` : `"${word}" is not in the dictionary yet.`;
+    }
+  </script>
+
+</body>
+</html>
