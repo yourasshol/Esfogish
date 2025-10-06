@@ -220,3 +220,30 @@ bluff = blue
 drigdicg = dani
 
 drongin = elisa
+
+# Heres a story
+
+blarnu  
+snorvik dramblen vintok  
+grivna flarnish pluffa  
+snorvuff grivnuff  
+tacocat glimbo  
+squibna flarnova  
+snorvokka bluff  
+pluffami glimbona  
+charnexami charnpluffa  
+grivninka dramblinka  
+blarnuvaa
+ # English translation
+
+ Hello  
+The cat danced at the party  
+Pizza was tasty and joyful  
+The cat saw the pizza and wanted it  
+The taco cat was cool  
+A lucky mistake made the flavor explode  
+The kitten blushed  
+I felt joy and awe  
+I am Charnex, bringer of joy  
+We ate pizza and danced together  
+Good night
