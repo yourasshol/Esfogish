@@ -1,5 +1,5 @@
 const dictionary = {
-  // Sentence Dictionary
+  // Add all your Esfogish → English entries here
   esfog: "I like pineapple on pizza",
   noesfog: "I dislike pineapple on pizza",
   blarnuff: "I greet you",
@@ -96,8 +96,6 @@ const dictionary = {
   charnzenzohug: "Charnex hugs the snorvik",
   charnzenzokiss: "Charnex kisses the grivna",
   charnzenzodream: "Charnex dreams of pizza stars",
-
-  // One Word Dictionary
   blarnu: "hello",
   zintok: "friend",
   grivna: "pizza",
@@ -158,14 +156,17 @@ const dictionary = {
   charnzenzovintok: "universal",
   bluff: "blue",
   drigdicg: "dani",
-  drongin: "elisa"
+  drongin: "elisa",
+  anthok: "anthony",
+  zandrex: "alexander"
 };
 
+// Create reverse dictionary
+const reverseDictionary = {};
+for (const [esfogish, english] of Object.entries(dictionary)) {
+  reverseDictionary[english.toLowerCase()] = esfogish;
+}
+
 document.getElementById("translateBtn").addEventListener("click", function () {
-  const word = document.getElementById("inputWord").value.trim().toLowerCase();
-  const meaning = dictionary[word];
-  const output = document.getElementById("output");
-  output.textContent = meaning
-    ? `"${word}" means: ${meaning}`
-    : `"${word}" is not in the dictionary yet."`;
-});
+  const input = document.getElementById("inputWord").value.trim().toLowerCase();
+  const direction = "auto"; // auto-d
