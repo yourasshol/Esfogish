@@ -1,5 +1,4 @@
 const dictionary = {
-  // Add all your Esfogish → English entries here
   esfog: "I like pineapple on pizza",
   noesfog: "I dislike pineapple on pizza",
   blarnuff: "I greet you",
@@ -168,5 +167,4 @@ for (const [esfogish, english] of Object.entries(dictionary)) {
 }
 
 document.getElementById("translateBtn").addEventListener("click", function () {
-  const input = document.getElementById("inputWord").value.trim().toLowerCase();
-  const direction = "auto"; // auto-d
+  const input = document.getElementById("inputWord").value.trim().toLower
