@@ -136,6 +136,4 @@ const dictionary = {
   charntacocat: "deity",
   charnpluffish: "aura",
   charnblimbok: "fashion",
-  charnsquibna: "accident",
-  charndramble: "move",
-  charnwhaznit: "curiosity",
+  charnsquib
