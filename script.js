@@ -1,4 +1,5 @@
 const dictionary = {
+  // Sentence Dictionary
   esfog: "I like pineapple on pizza",
   noesfog: "I dislike pineapple on pizza",
   blarnuff: "I greet you",
@@ -94,7 +95,70 @@ const dictionary = {
   charnzenzofight: "Charnex fights the blandness",
   charnzenzohug: "Charnex hugs the snorvik",
   charnzenzokiss: "Charnex kisses the grivna",
-  charnzenzodream: "Charnex dreams of pizza stars"
+  charnzenzodream: "Charnex dreams of pizza stars",
+
+  // One Word Dictionary
+  blarnu: "hello",
+  zintok: "friend",
+  grivna: "pizza",
+  pluffa: "joy",
+  snorvik: "cat",
+  dramble: "dance",
+  flarnish: "flavor",
+  glimbo: "cool",
+  vintok: "party",
+  squibna: "luck",
+  tacocat: "legend",
+  yuff: "yes",
+  narn: "no",
+  whaznit: "what",
+  blarnuva: "night",
+  blarnuzen: "morning",
+  snorvokka: "kitten",
+  flarnokka: "topping",
+  pluffish: "happy",
+  squibnish: "genius",
+  dramblish: "proud",
+  grivnish: "slice",
+  glimbona: "awesome",
+  snorvish: "feline",
+  drambluff: "freestyle",
+  flarnova: "burst",
+  grivnova: "crust",
+  tacokatta: "taco",
+  tacokitty: "feline",
+  esfoglo: "fruit",
+  charnex: "charlie",
+  charnuff: "master",
+  charnpluffa: "joy",
+  charnflarn: "dish",
+  charnvintok: "celebration",
+  charnzenzo: "power",
+  charnbluffa: "laughter",
+  charnnoesfog: "taboo",
+  charntacocat: "deity",
+  charnpluffish: "aura",
+  charnblimbok: "fashion",
+  charnsquibna: "accident",
+  charndramble: "move",
+  charnwhaznit: "curiosity",
+  charnflarnok: "spice",
+  charnpluffana: "echo",
+  charnzenzopuff: "laugh",
+  charnzenzodramble: "finale",
+  charnzenzoblarn: "ultimate",
+  charnzenzoglimbo: "cosmic",
+  charnzenzosnorvik: "celestial",
+  charnzenzogrivna: "destiny",
+  charnzenzoflarnish: "divine",
+  charnzenzopluffa: "infinite",
+  charnzenzotacocat: "god",
+  charnzenzoesfog: "eternal",
+  charnzenzonoesfog: "forbidden",
+  charnzenzovintok: "universal",
+  bluff: "blue",
+  drigdicg: "dani",
+  drongin: "elisa"
 };
 
 document.getElementById("translateBtn").addEventListener("click", function () {
@@ -103,5 +167,5 @@ document.getElementById("translateBtn").addEventListener("click", function () {
   const output = document.getElementById("output");
   output.textContent = meaning
     ? `"${word}" means: ${meaning}`
-    : `"${word}" is not in the dictionary yet.`;
+    : `"${word}" is not in the dictionary yet."`;
 });
