@@ -1,5 +1,4 @@
 const dictionary = {
-  // Esfogish → English
   esfog: "I like pineapple on pizza",
   noesfog: "I dislike pineapple on pizza",
   blarnuff: "I greet you",
@@ -96,8 +95,6 @@ const dictionary = {
   charnzenzohug: "Charnex hugs the snorvik",
   charnzenzokiss: "Charnex kisses the grivna",
   charnzenzodream: "Charnex dreams of pizza stars",
-
-  // One Word Dictionary
   blarnu: "hello",
   zintok: "friend",
   grivna: "pizza",
@@ -142,34 +139,3 @@ const dictionary = {
   charnsquibna: "accident",
   charndramble: "move",
   charnwhaznit: "curiosity",
-  charnflarnok: "spice",
-  charnpluffana: "echo",
-  charnzenzopuff: "laugh",
-  charnzenzodramble: "finale",
-  charnzenzoblarn: "ultimate",
-  charnzenzoglimbo: "cosmic",
-  charnzenzosnorvik: "celestial",
-  charnzenzogrivna: "destiny",
-  charnzenzoflarnish: "divine",
-  charnzenzopluffa: "infinite",
-  charnzenzotacocat: "god",
-  charnzenzoesfog: "eternal",
-  charnzenzonoesfog: "forbidden",
-  charnzenzovintok: "universal",
-  bluff: "blue",
-  drigdicg: "dani",
-  drongin: "elisa"
-};
-
-// Create reverse dictionary: English → Esfogish
-const reverseDictionary = {};
-for (const [key, value] of Object.entries(dictionary)) {
-  reverseDictionary[value.toLowerCase()] = key;
-}
-
-document.getElementById("translateBtn").addEventListener("click", function () {
-  const input = document.getElementById("inputWord").value.trim().toLowerCase();
-  const esfogish = dictionary[input];
-  const english = reverseDictionary[input];
-  const output = document.getElementById("output");
-
