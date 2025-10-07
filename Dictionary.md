@@ -221,6 +221,10 @@ drigdicg = dani
 
 drongin = elisa
 
+anthok = anthony
+
+zandrex = alexander
+
 # Heres a story
 
 blarnu  
