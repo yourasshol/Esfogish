@@ -139,32 +139,3 @@ const dictionary = {
   charnsquibna: "accident",
   charndramble: "move",
   charnwhaznit: "curiosity",
-  charnflarnok: "spice",
-  charnpluffana: "echo",
-  charnzenzopuff: "laugh",
-  charnzenzodramble: "finale",
-  charnzenzoblarn: "ultimate",
-  charnzenzoglimbo: "cosmic",
-  charnzenzosnorvik: "celestial",
-  charnzenzogrivna: "destiny",
-  charnzenzoflarnish: "divine",
-  charnzenzopluffa: "infinite",
-  charnzenzotacocat: "god",
-  charnzenzoesfog: "eternal",
-  charnzenzonoesfog: "forbidden",
-  charnzenzovintok: "universal",
-  bluff: "blue",
-  drigdicg: "dani",
-  drongin: "elisa",
-  anthok: "anthony",
-  zandrex: "alexander"
-};
-
-// Create reverse dictionary
-const reverseDictionary = {};
-for (const [esfogish, english] of Object.entries(dictionary)) {
-  reverseDictionary[english.toLowerCase()] = esfogish;
-}
-
-document.getElementById("translateBtn").addEventListener("click", function () {
-  const input = document.getElementById("inputWord").value.trim().toLower
