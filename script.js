@@ -94,46 +94,14 @@ const dictionary = {
   charnzenzofight: "Charnex fights the blandness",
   charnzenzohug: "Charnex hugs the snorvik",
   charnzenzokiss: "Charnex kisses the grivna",
-  charnzenzodream: "Charnex dreams of pizza stars",
-  blarnu: "hello",
-  zintok: "friend",
-  grivna: "pizza",
-  pluffa: "joy",
-  snorvik: "cat",
-  dramble: "dance",
-  flarnish: "flavor",
-  glimbo: "cool",
-  vintok: "party",
-  squibna: "luck",
-  tacocat: "legend",
-  yuff: "yes",
-  narn: "no",
-  whaznit: "what",
-  blarnuva: "night",
-  blarnuzen: "morning",
-  snorvokka: "kitten",
-  flarnokka: "topping",
-  pluffish: "happy",
-  squibnish: "genius",
-  dramblish: "proud",
-  grivnish: "slice",
-  glimbona: "awesome",
-  snorvish: "feline",
-  drambluff: "freestyle",
-  flarnova: "burst",
-  grivnova: "crust",
-  tacokatta: "taco",
-  tacokitty: "feline",
-  esfoglo: "fruit",
-  charnex: "charlie",
-  charnuff: "master",
-  charnpluffa: "joy",
-  charnflarn: "dish",
-  charnvintok: "celebration",
-  charnzenzo: "power",
-  charnbluffa: "laughter",
-  charnnoesfog: "taboo",
-  charntacocat: "deity",
-  charnpluffish: "aura",
-  charnblimbok: "fashion",
-  charnsquib
+  charnzenzodream: "Charnex dreams of pizza stars"
+};
+
+document.getElementById("translateBtn").addEventListener("click", function () {
+  const word = document.getElementById("inputWord").value.trim().toLowerCase();
+  const meaning = dictionary[word];
+  const output = document.getElementById("output");
+  output.textContent = meaning
+    ? `"${word}" means: ${meaning}`
+    : `"${word}" is not in the dictionary yet.`;
+});
